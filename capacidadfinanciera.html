@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./capacidadfinanciera.css" />
+    <title>Capacidad financiera</title>
+</head>
+<div class="form-container">
+    <h1>Capacidad Financiera</h1>
+    <section>
+        <h2>Introduce el salario y los gastos</h2>
+        <form class = "form">
+            
+                <div class="div-column-input">
+                    
+                    <label for ="InputMonthlySalary" class="label">
+                        Salario mensual
+                    </label>
+                    
+                    <label for ="InputMonthlySpendings" class="label">
+                        Gastos mensuales
+                    </label>
+                    
+                    
+                </div>
+                
+                <div class="div-column-input">
+                    
+                    <input id="InputMonthlySalary" type ="number" class="input"/>
+                    <input id="InputMonthlySpendings" type ="number" class="input"/>
+                </div>
+            
+            <button type ="button" class = "primary-button" onclick="onClickButtonCapacidadFinanciera()">
+                Calcular capacidad financiera
+            </button>
+        </form>
+    </section>
+    <section>
+        <h2>Resultados</h2>
+        <p class = "result-title">Estrategia 50/30/20</p>
+        <div class="div-column">
+            <div>
+                <label for = "pBasicExpenses" class ="label">
+                    Gastos básicos
+                </label> 
+                <p class = "result-value" id="pBasicExpenses"></p>
+            </div>
+
+            <div>
+                <label for = "pPersonalExpenses" class ="label">
+                    Gastos Personales
+                </label>
+                <p class = "result-value" id="pPersonalExpenses"></p>
+            </div>
+
+            <div>
+                <label for = "pAhorros" class ="label">
+                    Ahorro
+                </label>
+                <p class = "result-value" id="pAhorro"></p>
+            </div>
+        </div>
+        
+        <p class = "result-title">Capacidad de</p>
+        <div class="div-column">
+            <div>
+            <label for = "pIndebtednessCapacity" class ="label">
+                 Endeudamiento
+            </label>
+            <p class = "result-value" id="pIndebtednessCapacity"></p>
+            </div>
+
+            <div>
+            <label for = "pPaymentCapacity" class ="label">
+                 Pago
+            </label>
+            <p class = "result-value" id="pPaymentCapacity"></p>
+            </div>
+        </div>
+
+        <p class = "result-title">Porcentaje de personas en el estudio con un salario</p>
+        <div class="div-column">
+            <div>
+            <label for = "pHigherSalary" class ="label">
+                 Mayor
+            </label>
+            <p class = "result-value" id="pHigherSalary"></p>
+            </div>
+
+            <div>
+            <label for = "pEqualSalary" class ="label">
+                Igual
+            </label>
+            <p class = "result-value" id="pEqualSalary"></p>
+            </div>
+
+            <div>
+            <label for = "pLowerSalary" class ="label">
+                Menor
+            </label>
+            <p class = "result-value" id="pLowerSalary"></p>
+            </div>
+        </div>
+    </section>
+</div>
+ 
+    <script src="./capacidadfinanciera.js"></script>
+    <script src="./salarios.js"></script>
+    <script src="./analisis.js"></script>
+</body>
+</html>
